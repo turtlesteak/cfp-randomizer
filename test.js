@@ -4,10 +4,11 @@ function roll() {
     var a = Math.floor(Math.random() * Powers.length);
     var b = Math.floor(Math.random() * Powers.length);
     if (a == b) {
-        document.getElementById("roll").innerHTML = (Powers[a] + "&" + Powers[b] + ": Duplicate found, rerolling...");
+        // document.getElementById("roll").innerHTML = 
+        console.log(Powers[a] + "&" + Powers[b] + ": Duplicate found, rerolling...");
         roll();
     } else {
-        document.getElementById("roll").innerHTML = ("Power 1:\n" + Powers[a] + "\nPower 2:\n" + Powers[b] + "\n\nGood luck and have fun :D");
+        document.getElementById("roll").innerHTML = ("Power 1:<br/>" + Powers[a] + "<br/>Power 2:<br/>" +          Powers[b] + "<br/><br/>Good luck and have fun :D<br/>");
     }
 }
 roll()
