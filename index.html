@@ -4,13 +4,62 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="Curve Fever Pro Randomizer" property="og:site_name">
+    <meta content="Randomizer Tool" property="og:title">
+    <meta content="Bored no more. Use this tool to randomly choose a pair of powers." property="og:description">
+    <meta content="https://turtlesteak.github.io/cfp-randomizer/" property="og:image">
+    <meta name="theme-color" content="#2ade73">
     <title>Document</title>
     <script defer src="test.js"></script>
 </head>
 <body>
+    <h1>
+        Curve Fever Pro - Powers Randomizer
+    </h1>
+    <p>
+        Don't know what powers to use? 
+        <br>
+        Bored of your regular combination? 
+        <br>
+        Check this tool out! 
+    </p>
+    <h2>
+        What is this?
+    </h2>
+    <p>
+        This is a randomizer of all 30 powers in CFP. 
+        <br>
+        Cicking the button below will roll a pair of powers at random. 
+    </p>
+    <h2>
+        How to use:
+    </h2>
+    <ol>
+        <li>
+            Click the name of the highest power that you have unlocked.*
+        </li>
+        <li>
+            This ensures that you will not be rolled a power you do not have access to. 
+        </li>
+        <li>
+            Click the roll button. It's that easy! 
+        </li>
+    </ol>
     <span>
-        Curve Fever Pro Powers Randomizer
-        <div id="roll"></div>
-    </span> 
+        *If you do not select your maximum unlocked power, it will assume all 30 are unlocked.
+    </span>
+    <h2>
+        Duplicate powers: 
+    </h2>
+    <p>
+        Duplicate powers are 2 of the same power. For example, you roll Zap for both Power 1 and Power 2.
+        <br>
+        While you will sometimes roll a duplicate, they will never be displayed. 
+        <br>
+        Duplicates will be logged in the console, and a valid roll will be displayed.
+    </p>
+    
+    <div id="roll"></div>
+    <button onclick="roll()" autofocus="true">Roll Powers</button>
 </body>
 </html>
