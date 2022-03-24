@@ -11,6 +11,7 @@
     <meta name="theme-color" content="#15556e">
     <title>Document</title>
     <script defer src="test.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>
@@ -29,7 +30,7 @@
     <p>
         This is a randomizer of all 30 powers in CFP. 
         <br>
-        Cicking the button below will roll a pair of powers at random. 
+        Clicking the button below will roll a pair of powers at random. 
     </p>
     <h2>
         How to use:
@@ -45,8 +46,8 @@
             Click the roll button. It's that easy! 
         </li>
     </ol>
-    <span>
-        *If you do not select your maximum unlocked power, it will assume all 30 are unlocked.
+    <span style="color: red;">
+        *If you do not select your maximum unlocked power, it will assume all powers unlocked.
     </span>
     <h2>
         Duplicate powers: 
@@ -58,8 +59,52 @@
         <br>
         Duplicates will be logged in the console, and a valid roll will be displayed.
     </p>
+    <h2>!! WARNING !!</h2>
+    <p>
+        DO NOT ROLL WITH HOMING SELECTED. YOU RUN THE RISK OF CRASHING YOUR DEVICE. 
+        <br>
+        That being said, I can't stop you. Open up the console before you click roll though. 
+    </p>
+    <label for="powers">Highest power unlocked:</label>
+    <select name="powers" id="powersList">
+        <option value="30"></option>
+        <option value="1">Homing</option>
+        <option value="2">Jump</option>
+        <option value="2">Jump</option>
+        <option value="3">Brake</option>
+        <option value="4">Thick</option>
+        <option value="5">One Shot</option>
+        <option value="6">Mine</option>
+        <option value="7">Zap</option>
+        <option value="8">Low-res</option>
+        <option value="9">Thin</option>
+        <option value="10">Scatter Shot</option>
+        <option value="11">Steer-less</option>
+        <option value="12">Speed Burst</option>
+        <option value="13">Stealth Mine</option>
+        <option value="14">Trippy</option>
+        <option value="15">Power Dash</option>
+        <option value="16">Side Shot</option>
+        <option value="17">Speedy</option>
+        <option value="18">Shield</option>
+        <option value="19">Clock Block</option>
+        <option value="20">Time Bomb</option>
+        <option value="21">Hide Self</option>
+        <option value="22">Curve-blind</option>
+        <option value="23">Angle Turns</option>
+        <option value="24">Multi Shot</option>
+        <option value="25">Trigger Bomb</option>
+        <option value="26">180</option>
+        <option value="27">Double Shot</option>
+        <option value="28">Reverse</option>
+        <option value="29">Laser</option>
+        <option value="30">Teleport</option>
+    </select>
     
-    <div id="roll"></div>
+    <div class="Powers">Up Power:</div>
+    <div id="Power 1"><br></div>
+    <div>Down Power:</div>
+    <div id="Power 2"><br></div>
     <button onclick="roll()" autofocus="true">Roll Powers</button>
 </body>
 </html>
