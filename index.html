@@ -8,102 +8,118 @@
     <meta content="Randomizer Tool" property="og:title">
     <meta content="Bored no more. Use this tool to randomly choose a pair of powers." property="og:description">
     <meta content="https://turtlesteak.github.io/cfp-randomizer/cfp.png" property="og:image">
-    <meta name="theme-color" content="#15556e">
+    <meta name="theme-color" content="#34a3ce">
     <title>Document</title>
     <script defer src="test.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>
-        Curve Fever Pro - Powers Randomizer
-    </h1>
-    <p>
-        Don't know what powers to use? 
-        <br>
-        Bored of your regular combination? 
-        <br>
-        Check this tool out! 
-    </p>
-    <h2>
-        What is this?
-    </h2>
-    <p>
-        This is a randomizer of all 30 powers in CFP. 
-        <br>
-        Clicking the button below will roll a pair of powers at random. 
-    </p>
-    <h2>
-        How to use:
-    </h2>
-    <ol>
-        <li>
-            Click the name of the highest power that you have unlocked.*
-        </li>
-        <li>
-            This ensures that you will not be rolled a power you do not have access to. 
-        </li>
-        <li>
-            Click the roll button. It's that easy! 
-        </li>
-    </ol>
-    <span style="color: red;">
-        *If you do not select your maximum unlocked power, it will assume all powers unlocked.
-    </span>
-    <h2>
-        Duplicate powers: 
-    </h2>
-    <p>
-        Duplicate powers are 2 of the same power. For example, you roll Zap for both Power 1 and Power 2.
-        <br>
-        While you will sometimes roll a duplicate, they will never be displayed. 
-        <br>
-        Duplicates will be logged in the console, and a valid roll will be displayed.
-    </p>
-    <h2>!! WARNING !!</h2>
-    <p>
-        DO NOT ROLL WITH HOMING SELECTED. YOU RUN THE RISK OF CRASHING YOUR DEVICE. 
-        <br>
-        That being said, I can't stop you. Open up the console before you click roll though. 
-    </p>
-    <label for="powers">Highest power unlocked:</label>
-    <select name="powers" id="powersList">
-        <option value="30"></option>
-        <option value="1">Homing</option>
-        <option value="2">Jump</option>
-        <option value="2">Jump</option>
-        <option value="3">Brake</option>
-        <option value="4">Thick</option>
-        <option value="5">One Shot</option>
-        <option value="6">Mine</option>
-        <option value="7">Zap</option>
-        <option value="8">Low-res</option>
-        <option value="9">Thin</option>
-        <option value="10">Scatter Shot</option>
-        <option value="11">Steer-less</option>
-        <option value="12">Speed Burst</option>
-        <option value="13">Stealth Mine</option>
-        <option value="14">Trippy</option>
-        <option value="15">Power Dash</option>
-        <option value="16">Side Shot</option>
-        <option value="17">Speedy</option>
-        <option value="18">Shield</option>
-        <option value="19">Clock Block</option>
-        <option value="20">Time Bomb</option>
-        <option value="21">Hide Self</option>
-        <option value="22">Curve-blind</option>
-        <option value="23">Angle Turns</option>
-        <option value="24">Multi Shot</option>
-        <option value="25">Trigger Bomb</option>
-        <option value="26">180</option>
-        <option value="27">Double Shot</option>
-        <option value="28">Reverse</option>
-        <option value="29">Laser</option>
-        <option value="30">Teleport</option>
-    </select>
-    
-    <div class="Powers">Up Power:</div>
+    <div>
+        <h1>
+            Curve Fever Pro - Powers Randomizer
+        </h1>
+        <p>
+            Don't know what powers to use? 
+            <br>
+            Bored of your regular combination? 
+            <br>
+            Check this tool out! 
+        </p>
+    </div>
+    <div>
+        <h2>
+            What is this?
+        </h2>
+        <p>
+            This is a randomizer of all 30 powers in CFP. 
+            <br>
+            Clicking the button below will roll a pair of powers at random. 
+        </p>
+    </div>
+    <div>
+        <h2>
+            How to use:
+        </h2>
+        <ol>
+            <li>
+                Click the name of the highest power that you have unlocked.*
+            </li>
+            <li>
+                This ensures that you will not be rolled a power you do not have access to. 
+            </li>
+            <li>
+                Click the roll button. It's that easy! 
+            </li>
+        </ol>
+        <span style="color: red;">
+            *If you do not select your maximum unlocked power, it will assume all powers unlocked.
+        </span>
+    </div>
+    <div>
+        <h2>
+            Duplicate powers: 
+        </h2>
+        <p>
+            Duplicate powers are 2 of the same power. For example, you roll Zap for both Power 1 and Power 2.
+            <br>
+            While you will sometimes roll a duplicate, they will never be displayed. 
+            <br>
+            Duplicates will be logged in the console, and a valid roll will be displayed.
+        </p>
+    </div>
+    <div>
+        <h2>
+            !! WARNING !!
+        </h2>
+        <p>
+            DO NOT ROLL WITH HOMING SELECTED. YOU RUN THE RISK OF CRASHING YOUR DEVICE. 
+            <br>
+            That being said, I can't stop you. Open up the console before you click roll though. 
+        </p>
+    </div>
+    <div>
+        <label for="powersList">Highest power unlocked:</label>
+        <select id="powersList">
+            <option value="30" class="all"></option>
+            <option value="1" class="Shot">Homing</option>
+            <option value="2" class="Self">Jump</option>
+            <option value="3" class="Self">Brake</option>
+            <option value="4" class="Fever">Thick</option>
+            <option value="5" class="Shot">One Shot</option>
+            <option value="6" class="Mine">Mine</option>
+            <option value="7" class="Shot">Zap</option>
+            <option value="8" class="Fever">Low-res</option>
+            <option value="9" class="Self">Thin</option>
+            <option value="10" class="Shot">Scatter Shot</option>
+            <option value="11" class="Fever">Steer-less</option>
+            <option value="12" class="Self">Speed Burst</option>
+            <option value="13" class="Mine">Stealth Mine</option>
+            <option value="14" class="Fever">Trippy</option>
+            <option value="15" class="Self">Power Dash</option>
+            <option value="16" class="Shot">Side Shot</option>
+            <option value="17" class="Fever">Speedy</option>
+            <option value="18" class="Self">Shield</option>
+            <option value="19" class="Fever">Clock Block</option>
+            <option value="20" class="Mine">Time Bomb</option>
+            <option value="21" class="Self">Hide Self</option>
+            <option value="22" class="Fever">Curve-blind</option>
+            <option value="23" class="Self">Angle Turns</option>
+            <option value="24" class="Shot">Multi Shot</option>
+            <option value="25" class="Mine">Trigger Bomb</option>
+            <option value="26" class="Self">180</option>
+            <option value="27" class="Shot">Double Shot</option>
+            <option value="28" class="Fever">Reverse</option>
+            <option value="29" class="Shot">Laser</option>
+            <option value="30" class="Self">Teleport</option>
+        </select>
+    </div> 
+    <div class="Powers">
+        Up Power:
+    </div>
     <div id="Power 1"><br></div>
-    <div>Down Power:</div>
+    <div>
+        Down Power:
+    </div>
     <div id="Power 2"><br></div>
     <button onclick="roll()" autofocus="true">Roll Powers</button>
 </body>
