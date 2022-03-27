@@ -1,0 +1,33 @@
+
+
+/* Powers Colors */
+.Shot {
+    color: white;
+    background-color: hsla(256, 47%, 63%, 0.80);
+}
+.Self {
+    color: white;
+    background-color: hsla(197, 56%, 45%, 0.80);
+}
+.Fever {
+    color: white;
+    background-color: hsl(148, 43%, 45%, 0.80);
+}
+.Mine {
+    color: white;
+    background-color: hsl(358, 63%, 57%, 0.80);
+}
+.all {
+    color: white;
+
+}
+
+
+.Powers {
+    padding-top: 25px;
+}
+
+
+.warning {
+    color: red;
+}
