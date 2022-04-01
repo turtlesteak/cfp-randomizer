@@ -4,11 +4,14 @@ function roll() {
     let UnlockedPowers = select.value;
     let a = Math.floor(Math.random() * UnlockedPowers);
     let b = Math.floor(Math.random() * UnlockedPowers);
-    if (a == b) {
-        console.log(Powers[a] + " & " + Powers[b] + ": Duplicate found, rerolling...");
+    let c = Math.floor(Math.random() * UnlockedPowers);
+    if (a === b | a === c | b === c) {
+        console.log(Powers[a] + " & " + Powers[b] + " & " + Powers[c] + ": Duplicate found, rerolling...");
         roll();
     } else {
-        document.getElementById("Power 1").innerHTML = (Powers[a]);
-        document.getElementById("Power 2").innerHTML = (Powers[b] + "<br/><br/>Good luck and have fun :D");
+        document.getElementById("Power1").innerHTML = (Powers[a]);
+        document.getElementById("Power2").innerHTML = (Powers[b]);
+        document.getElementById("Power3").innerHTML = (Powers[c]);
+        document.getElementById("Close").innerHTML = ("Good luck and have fun 😄");
     }
 }

@@ -1,33 +1,99 @@
+body {
+    background-color: pink;
+    font-size: 1.15em;
+}
 
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    margin: 0px 50px;
+}
+.flex-container .flex {
+    flex: 1;
+}
+@media (max-width: 1700px) {
+    .flex-container {
+        flex-direction: column;
+    }
+}
+.flex {
+    padding-top: 20px;
+}
+
+.intro {
+    text-align: center;
+}
+
+.warning {
+    font-weight: bold;
+    color: red;
+}
+
+select {
+    width: 200px;
+    font-size: 1em;
+}
+#Power1{
+    font-weight: bold;
+    font-size: larger;
+    letter-spacing: 5px;
+    color: floralwhite;
+}
+#Power2{
+    font-weight: bold;
+    font-size: larger;
+    letter-spacing: 5px;
+    color: floralwhite;
+}
+#Power3{
+    font-weight: bold;
+    font-size: larger;
+    letter-spacing: 5px;
+    color: floralwhite;
+}
 
 /* Powers Colors */
 .Shot {
     color: white;
-    background-color: hsla(256, 47%, 63%, 0.80);
+    background-color: hsla(256, 47%, 63%, 0.94);
+    
 }
 .Self {
     color: white;
-    background-color: hsla(197, 56%, 45%, 0.80);
+    background-color: hsla(197, 56%, 45%, 0.94);
+    
 }
 .Fever {
     color: white;
-    background-color: hsl(148, 43%, 45%, 0.80);
+    background-color: hsl(148, 43%, 45%, 0.94);
+    
 }
 .Mine {
     color: white;
-    background-color: hsl(358, 63%, 57%, 0.80);
+    background-color: hsl(358, 63%, 57%, 0.94);
+    
 }
 .all {
-    color: white;
-
+    color: black;
+    text-align: center;
 }
 
-
-.Powers {
-    padding-top: 25px;
+button {
+    height: 50px;
+    width: 500px;
+    border-radius: 13px;
+    border: none;
+    font-size: 1.25em;
+    font-weight: bold;
+}
+button:hover {
+    background-color: white;
+}
+button:focus {
+    background-color: white;
 }
 
-
-.warning {
-    color: red;
+img {
+    max-width: 1700px;
+    padding: 0px 0px;
 }
