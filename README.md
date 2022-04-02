@@ -4,3 +4,7 @@
  
  The Python script required a Python IDE, which was a hassle.  
  Using JavaScript, it is integrated within the browser, for a user friendly experience. 
+
+## Changelog
+#### 01-April-2022
+* Removed April Fools 3rd power
